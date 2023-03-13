@@ -1,0 +1,118 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Moose Hub", "Ocean")
+	-- MAIN
+	local Main = Window:NewTab("Main")
+	local MainSection = Main:NewSection("Main")
+ 
+ 
+	MainSection:NewButton("Back/Front Flip", "Makes you do gymnastics", function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/7wDcPtLk'))()
+	end)
+ 
+	MainSection:NewToggle("Super-Speed", " Go fast!", function(state)
+		if state then
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
+			game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
+		else
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+			game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+		end
+	end)
+ 
+	MainSection:NewButton("Infinite Yield", "FE Admin Commands", function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end)
+ 
+ 
+	--LOCAL Players
+	local Player = Window:NewTab("Player")
+	local PlayerSection = Player:NewSection("Player")
+ 
+	PlayerSection:NewSlider("Walkspeed", "Choose ur speed!", 500, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+	end)
+ 
+	PlayerSection:NewSlider("JumpPower", "Choose ur JumpPower!", 350, 50, function(s) -- 500 (MaxValue) | 0 (MinValue)
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+	end)
+ 
+	PlayerSection:NewButton("Reset ws/jp", "Reset to ur default speed/ jumpPower", function()
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+	end)
+ 
+ 
+	--Other
+	local Other = Window:NewTab("Other")
+	local OtherSection = Other:NewSection("Other")
+ 
+	OtherSection:NewButton("Chat Spoofer", "Let u chat for other people!", function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/ant-7802/--/main/straightmilk.lua'))()
+	end)
+ 
+	OtherSection:NewButton("Bypassed Fly", "Bitd mode", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/BypassedFly.lua"))()
+ 
+		Fly(true)
+	end)
+ 
+--Key : WBxbcY9y64hidaypZPF3
+	--GiantSimFarm
+	local GiantSimFarm = Window:NewTab("GiantSimFarm")
+	local GiantSimFarmSection = GiantSimFarm:NewSection("GiantSimFarm")
+ 
+	GiantSimFarmSection:NewButton("AutoFarm", "Make it farm for you!", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/DEVIL-Script/DEVIL-Hub/main/DEVIL-Hub-Main", true))()
+end)
+ 
+--Key = 2ce8bf-5ed70b-4614fb-2e9d0b-3195a7
+	--CloverFarm
+	local CloverFarm = Window:NewTab("CloverFarm")
+	local CloverFarmSection = CloverFarm:NewSection("CloverFarm")
+ 
+	CloverFarmSection:NewButton("CloverFarm", "Collects clovers for you!", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/HUNTScripting/scripts/main/RebirthChampsX.lua"))()
+end)
+ 
+	--AimbotArsenal
+	local AimbotArsenal = Window:NewTab("AimbotArsenal")
+	local AimbotArsenalSection = AimbotArsenal:NewSection("AimbotArsenal")
+ 
+	AimbotArsenalSection:NewButton("AimbotArsenal", "Autoschoot", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+end)
+ 
+	--BigPaintball
+	local BigPaintball = Window:NewTab("BigPaintball")
+	local BigPaintballSection = BigPaintball:NewSection("BigPaintball")
+ 
+	BigPaintballSection:NewButton("BigPaintball", "Autoschoot", function()
+    loadstring(game:HttpGet("https://www.pastebin.com/raw/PuaaGKsT"))()
+end)
+ 
+	--Doors
+	local Doors = Window:NewTab("Doors")
+	local DoorsSection = Doors:NewSection("Doors")
+ 
+	DoorsSection:NewButton("Doors", "finish the game", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Script.lua"))()
+end)
+ 
+	--BeeSwarmSim
+	local BeeSwarmSim = Window:NewTab("BeeSwarmSim")
+	local BeeSwarmSimSection = BeeSwarmSim:NewSection("BeeSwarmSim")
+ 
+	BeeSwarmSimSection:NewButton("BeeSwarmSim", "Farming System!", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/AltsegoD/script/master/BeeSwarmSimulator.lua')))()
+end)
+ 
+	--BuildABoat
+	local BuildABoat = Window:NewTab("BuildABoat")
+	local BuildABoatSection = BuildABoat:NewSection("BuildABoat")
+ 
+	BuildABoatSection:NewButton("BuildABoat autobuild", "AutoBuilds!", function()
+	loadstring(game:HttpGet("http://raw.githubusercontent.com/max2007killer/auto-build-not-limit/main/autobuild.txt"))()
+end)	
+	BuildABoatSection:NewButton("BuildABoat autofarm", "autofarm!", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/yt-flix/Build/main/BuildABoatSpectro"))();
+end)
